@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ateliê A.S. | Moda</title>
+    <meta
+      name="description"
+      content="Descubra joias e vestidos elegantes no Ateliê A.S."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <p>Frete grátis acima de R$ 199,00</p>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header-inner">
+        <div class="brand-wrap">
+          <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="#" class="brand">Ateliê A.S.</a>
+        </div>
+
+        <nav class="main-nav" aria-label="Menu principal">
+          <a href="#home">Início</a>
+          <a href="#produtos">Coleção</a>
+          <a href="#ofertas">Categorias</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <label class="search-box" aria-label="Buscar produtos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.87 12.8l4.5 4.5 1.41-1.41-4.5-4.5A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+            <input id="searchInput" type="search" placeholder="Buscar joias e vestidos" />
+          </label>
+          <button class="theme-toggle" id="themeToggle" aria-label="Mudar tema">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+          </button>
+          <button class="cart-button" id="cartButton" aria-label="Abrir carrinho">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM6.2 6h14.15l-1.4 7.15a2 2 0 01-2 1.65H9.2a2 2 0 01-2-1.65L5.7 4.5H3V2h3.3l.53 2.5H20a1 1 0 011 1l-.95 5.3H8.7L7.9 6H6.2z"/></svg>
+            <span>Carrinho</span>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="slides" id="slides">
+            <article class="slide active">
+              <div class="slide-copy">
+                <span class="eyebrow">Nova coleção</span>
+                <h1>Seu estilo, suas escolhas</h1>
+                <p>
+                  Joias e vestidos elegantes para compor looks femininos com personalidade.
+                </p>
+                <div class="cta-row">
+                  <a href="#produtos" class="btn btn-primary">Ver coleção</a>
+                  <a href="#ofertas" class="btn btn-secondary">Explorar categorias</a>
+                </div>
+              </div>
+              <div class="slide-visual visual-one">
+                <div class="card-float card-float-one">Novidades</div>
+                <img
+                  class="fashion-scene"
+                  src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                  alt="Joias femininas delicadas"
+                />
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="slide-copy">
+                <span class="eyebrow">Elegância em cada detalhe</span>
+                <h1>Vestidos para momentos especiais</h1>
+                <p>
+                  Modelos elegantes para você se sentir confiante em todas as ocasiões.
+                </p>
+                <div class="cta-row">
+                  <a href="#produtos" class="btn btn-primary">Ver vestidos</a>
+                  <a href="#ofertas" class="btn btn-secondary">Ver categorias</a>
+                </div>
+              </div>
+              <div class="slide-visual visual-two">
+                <img
+                  class="fashion-scene"
+                  src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"
+                  alt="Vestido elegante para uma ocasião especial"
+                />
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="slide-copy">
+                <span class="eyebrow">Acessórios que fazem a diferença</span>
+                <h1>Os detalhes revelam seu estilo</h1>
+                <p>
+                  Joias delicadas para finalizar sua produção com charme e personalidade.
+                </p>
+                <div class="cta-row">
+                  <a href="#produtos" class="btn btn-primary">Ver acessórios</a>
+                  <a href="#sobre" class="btn btn-secondary">Sobre a loja</a>
+                </div>
+              </div>
+              <div class="slide-visual visual-three">
+                <img
+                  class="fashion-scene"
+                  src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                  alt="Joias femininas delicadas"
+                />
+              </div>
+            </article>
+          </div>
+
+          <div class="slide-controls" aria-label="Navegação do banner">
+            <button class="dot active" aria-label="Slide 1" data-slide="0"></button>
+            <button class="dot" aria-label="Slide 2" data-slide="1"></button>
+            <button class="dot" aria-label="Slide 3" data-slide="2"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div class="feature-item">
+          <span>🚚</span>
+          <div>
+            <h3>Frete grátis</h3>
+            <p>Em compras acima de R$ 199</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span>🛡️</span>
+          <div>
+            <h3>Moda feminina</h3>
+            <p>Peças para todos os momentos</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span>↩️</span>
+          <div>
+            <h3>Detalhes especiais</h3>
+            <p>Joias e vestidos para completar seu look</p>
+          </div>
+        </div>
+      </section>
+      <section class="categories container" id="ofertas">
+        <div class="section-heading">
+          <p class="title-tag">Categorias</p>
+          <h2>Encontre seu estilo</h2>
+        </div>
+        <div class="category-grid">
+          <article class="category-card category-jewelry">
+            <img class="category-photo" src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="" loading="lazy" />
+            <span>Detalhes delicados</span>
+            <h3>Joias</h3>
+          </article>
+          <article class="category-card category-dresses">
+            <img class="category-photo" src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="" loading="lazy" />
+            <span>Elegância para ocasiões especiais</span>
+            <h3>Vestidos elegantes</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="promo-carousel container" aria-label="Carrossel de moda em destaque">
+        <div class="section-heading">
+          <p class="title-tag">Novidades da coleção</p>
+          <h2>Moda para cada momento</h2>
+        </div>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow prev" type="button" aria-label="Oferta anterior">‹</button>
+
+          <div class="promo-track">
+            <article class="promo-card active">
+              <img class="promo-image" src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=500&amp;q=85" alt="Joias femininas delicadas" loading="lazy" />
+              <div class="promo-content">
+                <span>Brilho na medida certa</span>
+                <h3>Joias para guardar</h3>
+                <p>Peças delicadas que transformam os detalhes em momentos especiais.</p>
+              </div>
+              <a class="promo-price" href="#produtos">Ver joias</a>
+            </article>
+
+            <article class="promo-card">
+              <img class="promo-image" src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=500" alt="Vestido elegante" loading="lazy" />
+              <div class="promo-content">
+                <span>Elegância atemporal</span>
+                <h3>Vestidos para encantar</h3>
+                <p>Peças sofisticadas para festas, encontros e ocasiões inesquecíveis.</p>
+              </div>
+              <a class="promo-price" href="#produtos">Ver vestidos</a>
+            </article>
+          </div>
+
+          <button class="carousel-arrow next" type="button" aria-label="Próxima oferta">›</button>
+        </div>
+      </section>
+
+      <section class="products container" id="produtos">
+        <div class="section-heading">
+          <p class="title-tag">Nossa coleção</p>
+          <h2>Peças para expressar seu estilo</h2>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-id="1" data-name="Colar Dourado Aurora" data-price="129.90">
+            <button class="favorite-btn" aria-label="Favoritar produto">♡</button>
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Colar feminino dourado" loading="lazy" /></div>
+            <div class="product-info">
+              <span class="product-category">Joias</span>
+              <h3>Colar Dourado Aurora</h3>
+              <div class="product-meta">
+                <span class="rating">★ 4.9</span>
+                <span class="price">R$ 129,90</span>
+              </div>
+              <button class="add-cart-btn">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="2" data-name="Brincos Pérola" data-price="89.90">
+            <button class="favorite-btn" aria-label="Favoritar produto">♡</button>
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Brincos femininos elegantes" loading="lazy" /></div>
+            <div class="product-info">
+              <span class="product-category">Joias</span>
+              <h3>Brincos Pérola</h3>
+              <div class="product-meta">
+                <span class="rating">★ 4.8</span>
+                <span class="price">R$ 89,90</span>
+              </div>
+              <button class="add-cart-btn">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="3" data-name="Vestido Longo Elegance" data-price="289.90">
+            <button class="favorite-btn" aria-label="Favoritar produto">♡</button>
+            <div class="product-image"><img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Vestido longo elegante" loading="lazy" /></div>
+            <div class="product-info">
+              <span class="product-category">Vestidos elegantes</span>
+              <h3>Vestido Longo Elegance</h3>
+              <div class="product-meta">
+                <span class="rating">★ 4.9</span>
+                <span class="price">R$ 289,90</span>
+              </div>
+              <button class="add-cart-btn">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="4" data-name="Vestido Midi Sofisticado" data-price="239.90">
+            <button class="favorite-btn" aria-label="Favoritar produto">♡</button>
+            <div class="product-image"><img src="https://images.pexels.com/photos/1755428/pexels-photo-1755428.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Vestido midi vermelho elegante" loading="lazy" /></div>
+            <div class="product-info">
+              <span class="product-category">Vestidos elegantes</span>
+              <h3>Vestido Midi Sofisticado</h3>
+              <div class="product-meta">
+                <span class="rating">★ 4.8</span>
+                <span class="price">R$ 239,90</span>
+              </div>
+              <button class="add-cart-btn">Adicionar ao carrinho</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about container" id="sobre">
+        <img
+          src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+          alt="Joias femininas para compor diferentes looks"
+          loading="lazy"
+        />
+        <div>
+          <p class="title-tag">Sobre a loja</p>
+          <h2>Moda feminina para todos os momentos.</h2>
+          <p>
+            No Ateliê A.S., reunimos joias e vestidos elegantes para você
+            expressar sua personalidade em cada ocasião.
+          </p>
+          <a href="#produtos" class="btn btn-primary">Explore a coleção</a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Carrinho de compras">
+      <div class="cart-header">
+        <h2>Carrinho</h2>
+        <button class="close-cart" aria-label="Fechar carrinho">×</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Seu carrinho está vazio.</p>
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotal">R$ 0,00</strong>
+        </div>
+        <div class="summary-row">
+          <span>Frete</span>
+          <strong id="shipping">R$ 0,00</strong>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <strong id="total">R$ 0,00</strong>
+        </div>
+        <button class="checkout-btn">Finalizar compra</button>
+      </div>
+    </aside>
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <footer class="site-footer" id="contato">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="brand">Ateliê A.S.</a>
+          <p>Joias e vestidos elegantes para todos os momentos.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://instagram.com/a.sousaazk" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@a.sousaazk" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="https://www.youtube.com/@a.sousaazk" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
+
+        <div class="footer-social">
+          <span>Siga:</span>
+          <a href="https://instagram.com/a.sousaazk" target="_blank" rel="noreferrer">@a.sousaazk</a>
+        </div>
+      </div>
+      <p class="footer-signature">Criado por Agatha vitoria</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
